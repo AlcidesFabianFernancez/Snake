@@ -1,0 +1,64 @@
+/*Formato de letra*/
+*{
+    font-family: "Share Tech Mono", monospace;
+}
+
+/*Tamaño maximo del contenido*/
+#board, .boardInfo{
+    max-width: 500px;
+}
+
+/*Tamaño maximo del contenedor*/
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+/*Boton start editar tamaño*/
+#start, .boardInfo{
+    font-size: 25px;
+}
+
+/*ocultamos el mensaje*/
+#gameOver {
+    display: none;
+}
+
+/*espacio entre el contenido*/
+.boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/*Color de fondo y color de letra del boton Start*/
+#start {
+    background-color: #f35a69;
+    border: none;
+    color: white;
+}
+
+/* separacion de contenido*/
+#scoreBoard{
+    display: inline-flex;
+}
+
+/*cada 1 de los cuadrados del tablero*/
+.square {
+    aspect-ratio: 1;
+}
+
+/*Damos estilo a cada tipo de cuadrado*/
+.emptySquare {
+    background-color: #456990;
+}
+
+.snakeSquare {
+    background-color: #ccf47f;
+    border: 1px solid#000;
+}
+
+.foodSquare {
+    background-color: #f35a69;
+    border: 1px solid#000;
+}
